@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:background="@drawable/blue"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text=" CHOSE THE CANDIDATE "
+        android:textColor="#52595D"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:background="#ACA1A1"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Full Name:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/fName"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="3dp"
+            android:background="#5676"
+            android:hint="full name"
+            android:textSize="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/userAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#B71C1C"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registration number"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:id="@+id/reg"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="13dp"
+            android:background="#5676"
+            android:hint="ENTER Reg number"
+            android:inputType="textPassword"
+            android:textSize="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Candidade id:"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:id="@+id/userContact"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="32dp"
+            android:background="#5676"
+            android:hint="Enter Contact No.."
+            android:inputType="number"
+            android:textSize="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email id:"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:background="#5676"
+            android:hint="Enter email id"
+            android:textSize="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:background="#5676"
+            android:hint="gender"
+            android:textSize="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age:"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:background="#5676"
+            android:hint="Enter your age"
+            android:inputType="number"
+            android:textSize="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#B71C1C"
+        android:text="Submit"
+        android:textColor="#F5FBF6"
+        />
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Full Name:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/fName1"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="3dp"
+            android:background="#5676"
+            android:hint="full name"
+            android:textSize="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/userAlert1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#B71C1C"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registration number"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:id="@+id/reg1"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="13dp"
+            android:background="#5676"
+            android:hint="ENTER Reg number"
+            android:inputType="textPassword"
+            android:textSize="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Candidade id:"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:id="@+id/userContact1"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="32dp"
+            android:background="#5676"
+            android:hint="Enter Contact No.."
+            android:inputType="number"
+            android:textSize="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email id:"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:id="@+id/email1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:background="#5676"
+            android:hint="Enter email id"
+            android:textSize="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:id="@+id/gender1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:background="#5676"
+            android:hint="gender"
+            android:textSize="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age:"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:id="@+id/age1"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:background="#5676"
+            android:hint="Enter your age"
+            android:inputType="number"
+            android:textSize="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnSubmit2"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#B71C1C"
+        android:text="Submit"
+        android:textColor="#F5FBF6"
+        />
+
+</LinearLayout>
+
