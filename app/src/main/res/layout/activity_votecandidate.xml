@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:background="@drawable/blue"
     android:orientation="vertical">
@@ -99,7 +99,7 @@
             android:layout_height="40dp"
             android:layout_marginLeft="32dp"
             android:background="#5676"
-            android:hint="Enter Contact No.."
+            android:hint="Enter id"
             android:inputType="number"
             android:textSize="20dp"
             tools:ignore="TouchTargetSizeCheck" />
@@ -270,7 +270,7 @@
             android:layout_height="40dp"
             android:layout_marginLeft="32dp"
             android:background="#5676"
-            android:hint="Enter Contact No.."
+            android:hint="Enter id"
             android:inputType="number"
             android:textSize="20dp"
             tools:ignore="TouchTargetSizeCheck" />
