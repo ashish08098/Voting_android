@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/vote"
+    android:orientation="vertical">
+
+     <EditText
+         android:id="@+id/fullName"
+         android:padding="10dp"
+         android:background="@drawable/edittext_background"
+         android:hint="Full Name"
+         android:layout_height="50dp"
+         android:layout_width="match_parent"/>
+
+     <EditText
+         android:id="@+id/emailaddress"
+         android:layout_marginTop="10dp"
+         android:padding="10dp"
+         android:background="@drawable/edittext_background"
+         android:hint="Email Address"
+         android:layout_height="50dp"
+         android:layout_width="match_parent"/>
+
+     <EditText
+         android:id="@+id/gender"
+         android:layout_marginTop="10dp"
+         android:padding="10dp"
+         android:background="@drawable/edittext_background"
+         android:hint="Gender"
+         android:layout_height="50dp"
+         android:layout_width="match_parent"/>
+
+     <EditText
+         android:id="@+id/pincode"
+         android:layout_marginTop="10dp"
+         android:padding="10dp"
+         android:background="@drawable/edittext_background"
+         android:hint="PIN Code"
+         android:layout_height="50dp"
+         android:layout_width="match_parent"/>
+
+     <EditText
+         android:id="@+id/userid"
+         android:layout_marginTop="10dp"
+         android:padding="10dp"
+         android:background="@drawable/edittext_background"
+         android:hint="User ID"
+         android:layout_height="50dp"
+         android:layout_width="match_parent"/>
+
+
+     <Button
+         android:id="@+id/rulesnregulations"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:layout_marginTop="69dp"
+         android:background="#9F000000"
+         android:text="Rules And Regulations"
+         android:onClick="rulesandregulations"/>
+
+     <Button
+         android:id="@+id/vote"
+         android:layout_marginTop="70dp"
+         android:layout_gravity="center"
+         android:text="VOTE"
+         android:background="#408701"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:onClick="vote"/>
