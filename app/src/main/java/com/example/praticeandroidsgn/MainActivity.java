@@ -18,7 +18,7 @@ import androidx.appcompat.app.AlertDialog;
 public class MainActivity extends AppCompatActivity {
     boolean invalid = false;
     TextView txtalertName;
-    EditText first,last,Userreg,UserContact,email,age;
+    EditText first,pass,UserContact,email,age;
     Button SubmitSave;
     RadioButton Malebtn,Femalbtn,otherbtn;
 
@@ -64,9 +64,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         first=findViewById(R.id.firstName);
-        last=findViewById(R.id.lastName);
+        pass=findViewById(R.id.reg);
         UserContact=findViewById(R.id.userContact);
-        Userreg=findViewById(R.id.reg);
+
         email=findViewById(R.id.email);
         age=findViewById(R.id.age);
         Malebtn=findViewById(R.id.Male);
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String name = first.getText().toString();
-                String name2 = last.getText().toString();
+                String name2 = pass.getText().toString();
                 String contact = UserContact.getText().toString();
 //                String comment=UserComment.getText().toString();
                 if (name.isEmpty()) {
