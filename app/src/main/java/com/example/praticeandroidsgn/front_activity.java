@@ -60,12 +60,12 @@ public class activity_front extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         changeInProgress(false);
                         if(task.isSuccessful()){
-                            Toast.makeText(activity_front.this, "Succesfully create account, Check email to verify", Toast.LENGTH_SHORT).show();
+                            utility.showToast(activity_front.this, "Succesfully create account, Check email to verify");
                             firebaseAuth.getCurrentUser().sendEmailVerification();
                             firebaseAuth.signOut();
                             finish();
                         }else {
-                            Toast.makeText(activity_front.this, task.getException().getLocalizedMessage(), Toast.LENGTH_SHORT).show();
+                            utility.showToast(activity_front.this, task.getException().getLocalizedMessage());
                         }
                     }
                 }
