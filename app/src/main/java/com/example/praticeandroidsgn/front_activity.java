@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.regex.Pattern;
 
-public class activity_front extends AppCompatActivity {
+class activity_front extends AppCompatActivity {
     EditText emailEditText,passwordEditText,ConfirmPasswordEditText;
     Button createAccountBtn;
     ProgressBar progresssBar;

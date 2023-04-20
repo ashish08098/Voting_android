@@ -18,29 +18,25 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class loginActivity extends AppCompatActivity {
+public class administratorLogin extends AppCompatActivity {
 
     EditText emailEditText,passwordEditText;
     Button loginbtn;
     ProgressBar progresssBar;
-    TextView createAccountBtnTextView;
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_administrator_login);
 
         emailEditText = findViewById(R.id.email_edit_text);
         passwordEditText = findViewById(R.id.password_edit_text);
         progresssBar = findViewById(R.id.progreass_bar);
         loginbtn = findViewById(R.id.login_button);
-        createAccountBtnTextView = findViewById(R.id.create_account_text_veiw_btn);
 
         loginbtn.setOnClickListener((v)-> loginUser());
-        createAccountBtnTextView.setOnClickListener((v)->startActivity(new Intent(loginActivity.this,activity_front.class)));
     }
-
     void loginUser(){
         String email = emailEditText.getText().toString();
         String password = passwordEditText.getText().toString();
@@ -62,14 +58,14 @@ public class loginActivity extends AppCompatActivity {
                     //login is success
                     if(firebaseAuth.getCurrentUser().isEmailVerified()){
                         //go to mainactivity
-                        startActivity((new Intent(loginActivity.this,MainActivity.class)));
+                        startActivity((new Intent(administratorLogin.this,MainActivity.class)));
                         finish();
                     }else {
-                        utility.showToast(loginActivity.this,"Email not verified, Please verify your email!");
+                        utility.showToast(administratorLogin.this,"Email not verified, Please verify your email!");
                     }
                 }else {
                     //login failed
-                    utility.showToast(loginActivity.this,task.getException().getLocalizedMessage());
+                    utility.showToast(administratorLogin.this,task.getException().getLocalizedMessage());
                 }
             }
         });
