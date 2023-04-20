@@ -9,8 +9,20 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AdministratorANDROIDPROJECT"
+        android:theme="@style/Theme.PraticeAndroidSgn"
         tools:targetApi="31">
+        <activity
+            android:name=".splashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".adminlogin"
+            android:exported="false" />
+        <activity
+            android:name=".votecandidate"
+            android:exported="false" />
+        <activity
+            android:name=".vote"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

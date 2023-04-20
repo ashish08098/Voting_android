@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/bire"
+    android:background="@drawable/blue"
     android:orientation="vertical">
 
     <TextView
@@ -14,8 +14,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:text=" Registration Form"
-        android:textColor="#F0F8FF"
+        android:text=" CHOSE THE CANDIDATE "
+        android:textColor="#52595D"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -37,44 +37,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:text="first Name:"
+            android:text="Full Name:"
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/firstName"
+            android:id="@+id/fName"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:layout_marginLeft="3dp"
             android:background="#5676"
-            android:hint="Enter first name.."
+            android:hint="full name"
             android:textSize="20dp"
             tools:ignore="TouchTargetSizeCheck" />
 
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="5dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:text="Last Name:"
-            android:textSize="20dp" />
-
-        <EditText
-            android:id="@+id/lastName"
-            android:layout_width="300dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="3dp"
-            android:background="#5676"
-            android:hint="Enter lastname"
-            android:textSize="20dp"
-            tools:ignore="TouchTargetSizeCheck" />
-
-    </LinearLayout>
     <TextView
         android:id="@+id/userAlert"
         android:layout_width="match_parent"
@@ -112,7 +89,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Contact:"
+            android:text="Candidade id:"
             android:textSize="20dp"
             android:layout_marginLeft="5dp" />
 
@@ -122,7 +99,7 @@
             android:layout_height="40dp"
             android:layout_marginLeft="32dp"
             android:background="#5676"
-            android:hint="Enter Contact No.."
+            android:hint="Enter id"
             android:inputType="number"
             android:textSize="20dp"
             tools:ignore="TouchTargetSizeCheck" />
@@ -152,40 +129,30 @@
 
 
     </LinearLayout>
-    <RadioGroup
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Gender"
             android:textSize="20dp"
-            android:layout_marginRight="35dp"
-            android:layout_marginLeft="5dp"/>
-        <RadioButton
-            android:id="@+id/Male"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Male"
-            android:gravity="center"
-            android:textSize="20dp"/>
-        <RadioButton
-            android:id="@+id/Female"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Female"
-            android:gravity="center"
-            android:textSize="20dp"/>
-        <RadioButton
-            android:id="@+id/others"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Others"
-            android:gravity="center"
-            android:textSize="20dp"/>
-    </RadioGroup>
+            android:layout_marginLeft="5dp" />
 
+        <EditText
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:background="#5676"
+            android:hint="gender"
+            android:textSize="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -212,51 +179,7 @@
 
     </LinearLayout>
 
-    <!--    <LinearLayout-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:orientation="horizontal">-->
-    <!--        <TextView-->
-    <!--            android:layout_width="wrap_content"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:text="Country"-->
-    <!--            android:textSize="20dp"-->
-    <!--            android:layout_marginLeft="5dp"/>-->
 
-    <!--        <Spinner-->
-    <!--            android:id="@+id/SpCountry"-->
-    <!--            android:layout_width="300dp"-->
-    <!--            android:layout_height="wrap_content"-->
-
-    <!--            android:layout_marginLeft="38dp"-->
-    <!--            android:contentDescription="@string/appbar_scrolling_view_behavior"-->
-    <!--            android:textSize="30dp"-->
-    <!--            tools:ignore="TouchTargetSizeCheck" />-->
-    <!--    </LinearLayout>-->
-
-    <!--    <LinearLayout-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginTop="10dp"-->
-    <!--        android:orientation="horizontal">-->
-
-    <!--        <TextView-->
-    <!--            android:layout_width="wrap_content"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:layout_marginLeft="5dp"-->
-    <!--            android:text="EDUCATION"-->
-
-    <!--            android:textSize="20dp" />-->
-
-    <!--        <EditText-->
-    <!--            android:id="@+id/usercomment"-->
-    <!--            android:layout_width="300dp"-->
-    <!--            android:layout_height="100dp"-->
-    <!--            android:layout_marginLeft="15dp"-->
-    <!--            android:background="#5676"-->
-    <!--            android:hint="Enter Here" />-->
-
-    <!--    </LinearLayout>-->
 
     <Button
         android:id="@+id/btnSubmit"
@@ -265,8 +188,181 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:background="#B71C1C"
-        android:text="Click To Submit"
-        android:textColor="#F5FBF6" />
+        android:text="Submit"
+        android:textColor="#F5FBF6"
+        />
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Full Name:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/fName1"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="3dp"
+            android:background="#5676"
+            android:hint="full name"
+            android:textSize="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/userAlert1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#B71C1C"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registration number"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:id="@+id/reg1"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="13dp"
+            android:background="#5676"
+            android:hint="ENTER Reg number"
+            android:inputType="textPassword"
+            android:textSize="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Candidade id:"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:id="@+id/userContact1"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="32dp"
+            android:background="#5676"
+            android:hint="Enter id"
+            android:inputType="number"
+            android:textSize="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email id:"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:id="@+id/email1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:background="#5676"
+            android:hint="Enter email id"
+            android:textSize="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:id="@+id/gender1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:background="#5676"
+            android:hint="gender"
+            android:textSize="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age:"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:id="@+id/age1"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:background="#5676"
+            android:hint="Enter your age"
+            android:inputType="number"
+            android:textSize="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnSubmit2"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#B71C1C"
+        android:text="Submit"
+        android:textColor="#F5FBF6"
+        />
 
 </LinearLayout>
 

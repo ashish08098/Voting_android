@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">administrator - ANDROID PROJECT</string>
+    <string name="app_name">praticeandroidsgn</string>
+    <string-array name="campus">
+        <item>BBSR</item>
+        <item>PKD</item>
+        <item>VIZAG</item>
+        <item>BOLANGIR</item>
+
+    </string-array>
 </resources>
