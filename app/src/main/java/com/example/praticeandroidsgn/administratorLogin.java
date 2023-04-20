@@ -58,7 +58,7 @@ public class administratorLogin extends AppCompatActivity {
                     //login is success
                     if(firebaseAuth.getCurrentUser().isEmailVerified()){
                         //go to mainactivity
-                        startActivity((new Intent(administratorLogin.this,MainActivity.class)));
+                        startActivity((new Intent(administratorLogin.this,administratorTask.class)));
                         finish();
                     }else {
                         utility.showToast(administratorLogin.this,"Email not verified, Please verify your email!");
