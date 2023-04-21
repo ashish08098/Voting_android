@@ -12,6 +12,24 @@
         android:theme="@style/Theme.PraticeAndroidSgn"
         tools:targetApi="31">
         <activity
+            android:name=".AddCandidates"
+            android:exported="false" />
+        <activity
+            android:name=".administratorTask"
+            android:exported="false" />
+        <activity
+            android:name=".administratorLogin"
+            android:exported="false" />
+        <activity
+            android:name=".loginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".splashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".adminlogin"
+            android:exported="false" />
+        <activity
             android:name=".votecandidate"
             android:exported="false" />
         <activity

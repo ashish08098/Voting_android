@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "304795778892",
-    "project_id": "pratice-android-sgn",
-    "storage_bucket": "pratice-android-sgn.appspot.com"
+    "project_number": "429212827894",
+    "project_id": "online-voting-system-74f8c",
+    "storage_bucket": "online-voting-system-74f8c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:304795778892:android:9acb8dc903ef2be59559e9",
+        "mobilesdk_app_id": "1:429212827894:android:627673091530c0e4c7ecd7",
         "android_client_info": {
           "package_name": "com.example.praticeandroidsgn"
         }
       },
       "oauth_client": [
         {
-          "client_id": "304795778892-3mrj5hkq81rvjidg7no363eoem83uc9t.apps.googleusercontent.com",
+          "client_id": "429212827894-ueco1koj0ghevi0t02d5olnh37lfub5b.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDWB_PkMEemevjdtunMjAz_nufH2nrKw_k"
+          "current_key": "AIzaSyA_hR4J9-MEUG8MCiRM5nwGC41sGkiQOxs"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "304795778892-3mrj5hkq81rvjidg7no363eoem83uc9t.apps.googleusercontent.com",
+              "client_id": "429212827894-ueco1koj0ghevi0t02d5olnh37lfub5b.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
